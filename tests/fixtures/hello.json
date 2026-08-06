@@ -1,0 +1,21 @@
+{
+  "type": "hello",
+  "protocol_version": "1.0",
+  "env_name": "webots_crazyflie_3d_v1",
+  "config": {
+    "lidar_layers": 16,
+    "lidar_points_per_layer": 180,
+    "lidar_max_range": 50.0,
+    "ultrasonic_count": 8,
+    "ultrasonic_max_range": 5.0,
+    "control_dt": 0.1,
+    "max_episode_time": 60.0,
+    "v_max_xy": 0.5,
+    "v_max_z": 0.5,
+    "yawrate_max": 2.094,
+    "goal_tolerance": 0.5,
+    "robot_radius": 0.08,
+    "arena_size": [20.0, 20.0, 3.0]
+  }
+}
+

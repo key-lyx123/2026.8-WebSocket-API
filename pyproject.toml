@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drone-online-agent"
+version = "0.1.0"
+description = "Protocol-compliant online LLM client for Webots drone navigation"
+requires-python = ">=3.11"
+dependencies = [
+  "websockets>=15,<17",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "pytest-asyncio>=0.25",
+]
+
+[project.scripts]
+drone-online-agent = "agent.run_agent:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
